@@ -1,0 +1,9 @@
+<div *ngIf="scenario">
+    <h2>{{ scenario.name }}</h2>
+    <p><strong>Description:</strong> {{ scenario.description }}</p>
+    <p><strong>Period:</strong> {{ scenario.period }}</p>
+</div>
+<div *ngIf="!scenario">
+    <p>Loading...</p>
+</div>
+  
