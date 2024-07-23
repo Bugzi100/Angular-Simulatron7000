@@ -10,9 +10,7 @@ export interface Scenario {
   period: number;
 }
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ScenarioService {
 
   private apiUrl = 'http://localhost:8080/api/scenarios';

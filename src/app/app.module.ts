@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ScenarioDetailsComponent } from './scenario-details/scenario-details.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ScenarioService } from './scenario.service';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule,
   ],
   providers: [
+    ScenarioService,
     provideClientHydration(),
     provideHttpClient(withFetch())
   ],
